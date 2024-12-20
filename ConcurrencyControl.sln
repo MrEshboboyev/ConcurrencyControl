@@ -1,8 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrencyControl.API", "ConcurrencyControl.API\ConcurrencyControl.API.csproj", "{2A8E6C3A-1B86-4A16-AA4B-98AE1D2CE59B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrencyControl.Persistence", "ConcurrencyControl.Persistence\ConcurrencyControl.Persistence.csproj", "{67261A76-79EC-43A4-9D51-484FAC8C6B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrencyControl.Domain", "ConcurrencyControl.Domain\ConcurrencyControl.Domain.csproj", "{CBEC2EEE-9CCC-418B-909C-84746598269C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A8E6C3A-1B86-4A16-AA4B-98AE1D2CE59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8E6C3A-1B86-4A16-AA4B-98AE1D2CE59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A8E6C3A-1B86-4A16-AA4B-98AE1D2CE59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A8E6C3A-1B86-4A16-AA4B-98AE1D2CE59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67261A76-79EC-43A4-9D51-484FAC8C6B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67261A76-79EC-43A4-9D51-484FAC8C6B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67261A76-79EC-43A4-9D51-484FAC8C6B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67261A76-79EC-43A4-9D51-484FAC8C6B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBEC2EEE-9CCC-418B-909C-84746598269C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBEC2EEE-9CCC-418B-909C-84746598269C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBEC2EEE-9CCC-418B-909C-84746598269C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBEC2EEE-9CCC-418B-909C-84746598269C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
