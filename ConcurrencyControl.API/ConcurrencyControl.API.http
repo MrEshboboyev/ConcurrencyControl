@@ -1,6 +1,6 @@
 @ConcurrencyControl.API_HostAddress = http://localhost:5100
 
-GET {{ConcurrencyControl.API_HostAddress}}/weatherforecast/
+GET http://localhost:5100/weatherforecast/
 Accept: application/json
 
 ###

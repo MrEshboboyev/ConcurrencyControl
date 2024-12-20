@@ -16,12 +16,14 @@ public class BankAccountRepository(DemoDbContext context)
 
     public async Task CreateBankAccountAsync(string accountNumber, string ownerName)
     {
-        await _context.BankAccounts.AddAsync(new BankAccount()
+        var bankAccount = new BankAccount
         {
             AccountNumber = accountNumber,
-            OwnerName = ownerName
-        });
-        
+            OwnerName = ownerName,
+            RowVersion = Guid.NewGuid().ToByteArray() // Temporary fix
+        };
+
+        await _context.BankAccounts.AddAsync(bankAccount);
         await _context.SaveChangesAsync();
     }
 
@@ -36,7 +38,8 @@ public class BankAccountRepository(DemoDbContext context)
 
             try
             {
-
+                _context.BankAccounts.Update(account);
+                await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException ex)
             {
